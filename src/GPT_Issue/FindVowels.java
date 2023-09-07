@@ -19,8 +19,8 @@ public class FindVowels {
         int count = 0;
 
         char[] symbols = str.toCharArray();
-        for (int i = 0; i < symbols.length; i++) {
-            char c = Character.toLowerCase(symbols[i]);
+        for (char symbol : symbols) {
+            char c = Character.toLowerCase(symbol);
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
                 count++;
             }
