@@ -1,27 +1,15 @@
 package GPT_Issue;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
+import java.util.*;
 /*
 Напишите программу, которая сортирует массив строк по их длине с использованием лямбда-выражения.
 Программа должна позволять пользователю вводить строки, а затем выводить их в порядке возрастания длины.
 
-Пример:
-Введите строки (для завершения введите пустую строку):
-Hello
-I
-am
-learning
-Java
-
-Отсортированные строки:
-I
-am
-Java
-Hello
-learning
+Пример:             Отсортированные строки:
+        Hello                               I
+        I                                   am
+        am                                  Java
+        learning                            Hello
+        Java                                learning
  */
 public class StringLengthSort {
     public static void main(String[] args) {
@@ -35,7 +23,6 @@ public class StringLengthSort {
             }
             strings.add(input);
         }
-
         strings.sort( (s1,s2) -> s1.length() - s2.length());
 
         System.out.println("Отсортированные пл длине строки: ");

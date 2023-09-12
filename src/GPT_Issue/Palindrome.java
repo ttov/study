@@ -1,7 +1,5 @@
 package GPT_Issue;
-
 import java.util.Scanner;
-
 /*
 Напишите программу, которая проверяет, является ли введенная пользователем строка палиндромом.
 Палиндром - это строка, которая читается одинаково слева направо и справа налево.
@@ -24,7 +22,5 @@ public class Palindrome {
         } else {
             System.out.println("Not a Palindrome");
         }
-
-
     }
 }
